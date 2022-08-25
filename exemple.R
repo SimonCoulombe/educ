@@ -13,4 +13,12 @@ ETP_par_CSS %>%
   facet_wrap(~ categorie)  +   # 
   geom_point() +   # on veut un point pour chaque observation
   geom_line() +  # on veut des lignes  qui relient les points de chaque couleur
-  theme_bw() # on veut  le theme black & white, moins laid que le thème par défaut
+  theme_bw() + # on veut  le theme black & white, moins laid que le thème par défaut
+  labs(
+    x = "Année",
+    y = "Personnel",
+    color = "Secteur",
+    title = "Évolution du personnel selon le secteur et la catégorie 2010-2021",
+    subtitle = "ayoye!",
+    caption = "source: my butt"
+  )
